@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float initialVelocity = 0.0;
+    float acceleration = 4.0;
+    float time = 3.0;
+
+    float finalVelocity = initialVelocity + (acceleration * time);
+    float distance = (initialVelocity * time) + (0.5 * acceleration * time * time);
+
+    printf("(a) Final velocity: %.2f m/s\n", finalVelocity);
+    printf("(b) Distance traveled: %.2f meters\n", distance);
+
+    return 0;
+}
